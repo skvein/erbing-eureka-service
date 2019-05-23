@@ -1,11 +1,21 @@
-
 server:
- port: 8101
+ port: 8761
+logging:
+ config: classpath:log4j2.xml
+
 eureka:
+ server:
+  enable-self-preservation: false
  instance:
-  hostname: localhost
+  hostname: peer1
  client:
   registerWithEureka: false
   fetchRegistry: false
-  serviceUrl:
-   defaultZone: http://localhost:8101/eureka/
+  healthcheck:
+   enabled: true
+security:
+ basic:
+  enabled: true
+ user:
+  name: root
+  password: 123456

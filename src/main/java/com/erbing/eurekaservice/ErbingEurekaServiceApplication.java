@@ -1,4 +1,4 @@
-package com.erbing.erbingeurekaservice;
+package com.erbing.eurekaservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
